@@ -39,12 +39,20 @@
   text-transform: uppercase; color: var(--text-mute); margin-bottom: 0.28rem;
 }
 .pq .b { font-size: 0.84rem; line-height: 1.45; color: #d6d3cb; }
-table.book { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.86rem; }
+table.book { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.82rem; }
 table.book th, table.book td {
-  padding: 0.7rem 0.85rem; text-align: left; border-bottom: 1px solid var(--line-soft);
+  padding: 0.65rem 0.8rem; text-align: left; border-bottom: 1px solid var(--line-soft); white-space: nowrap;
 }
 table.book th {
-  background: var(--bg-elev); color: var(--text-mute); font-size: 0.72rem;
-  letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500;
+  background: var(--bg-elev); color: var(--text-mute); font-size: 0.68rem;
+  letter-spacing: 0.07em; text-transform: uppercase; font-weight: 500;
 }
+table.book tfoot td {
+  background: rgba(201,162,39,0.04); color: var(--text-dim); font-weight: 500;
+}
+table.book tr.pending td { color: var(--text-mute); font-style: italic; }
 .table-wrap { overflow-x: auto; border: 1px solid var(--line-soft); border-radius: 10px; }
+.book-sum { margin-bottom: 1.5rem; }
+.fine {
+  font-size: 0.78rem; color: var(--text-mute); line-height: 1.65; max-width: 46rem;
+}
